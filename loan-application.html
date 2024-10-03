@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Application - Loansphere</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            width: 100%;
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #45a049;
+        }
+        .container {
+            padding: 20px;
+        }
+        form {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h3>Loan Application</h3>
+    </header>
+    <nav>
+        <a href="borrower-dashboard.html">Dashboard</a>
+        <a href="loan-application.html">Apply for Loan</a>
+        <a href="loan-status.html">Loan Status</a>
+        <a href="payment-history.html">Payment History</a>
+        <a href="profile-settings.html">Profile Settings</a>
+        <a href="help.html">Help</a>
+    </nav>
+
+    <div class="container">
+        <h1>Apply for Loan</h1>
+        <form>
+            <label for="loan-amount">Loan Amount</label>
+            <input type="number" id="loan-amount" name="loan-amount" placeholder="Enter loan amount" required>
+
+            <label for="loan-purpose">Purpose of Loan</label>
+            <textarea id="loan-purpose" name="loan-purpose" rows="4" placeholder="Enter the purpose of the loan"></textarea>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </div>
+</body>
+</html>

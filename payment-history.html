@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment History - Loansphere</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            width: 100%;
+        }
+        nav {
+            display: flex;
+            justify-content: left;
+            background-color: #333;
+            width: 100%;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+
+
+
+
+
+        
+
+
+
+
+        .main-content {
+            width: 80%;
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        @media (max-width: 768px) {
+            .main-content {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h3>Payment History</h3>
+    </header>
+
+    <nav>
+        <a href="borrower-dashboard.html">Dashboard</a>
+        <a href="loan-application.html">Apply for Loan</a>
+        <a href="loan-status.html">Loan Status</a>
+        <a href="payment-history.html">Payment History</a>
+        <a href="profile-settings.html">Profile Settings</a>
+        <a href="help.html">Help</a>
+    </nav>
+
+    <div class="main-content">
+        <h2>Your Payment History</h2>
+        <table>
+            <tr>
+                <th>Payment ID</th>
+                <th>Amount</th>
+                <th>Date</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>201</td>
+                <td>$500</td>
+                <td>2024-09-15</td>
+                <td>Completed</td>
+            </tr>
+            <tr>
+                <td>202</td>
+                <td>$500</td>
+                <td>2024-08-15</td>
+                <td>Completed</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
